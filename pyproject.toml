@@ -28,8 +28,8 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://tickerrisk.com"
-Source = "https://github.com/tickerrisk/tickerrisk-mcp"
-Issues = "https://github.com/tickerrisk/tickerrisk-mcp/issues"
+Source = "https://github.com/Tickerrisk/tickerrisk-mcp"
+Issues = "https://github.com/Tickerrisk/tickerrisk-mcp/issues"
 
 [project.scripts]
 tickerrisk-mcp = "tickerrisk_mcp.server:main"

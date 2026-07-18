@@ -74,7 +74,7 @@ In `~/.cursor/mcp.json`:
 ### From source
 
 ```bash
-git clone https://github.com/tickerrisk/tickerrisk-mcp
+git clone https://github.com/Tickerrisk/tickerrisk-mcp
 cd tickerrisk-mcp
 pip install -e .
 tickerrisk-mcp
