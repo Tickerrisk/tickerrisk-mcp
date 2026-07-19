@@ -3,10 +3,12 @@
 Exposes TickerRisk's catalyst-risk scanner as MCP tools so an AI assistant can
 answer "is it safe to sell this option?" with real event data instead of a guess.
 
-The differentiator over a generic options screener: every candidate is scored for
-hidden catalysts (earnings, FDA decisions, legal filings, SEC events) that land
-INSIDE the expiry window. A fat premium is usually the market pricing an event,
-not free money.
+What it adds over a generic options screener: every candidate is scored across FIVE
+event types at once — earnings, FDA decisions, legal filings, SEC events and clinical
+milestones — landing INSIDE the expiry window, as a single 0-100 number that results
+are filtered on. (Earnings-only flags exist elsewhere, e.g. Barchart's "Flag Earnings";
+the combined score and the legal/SEC inputs are the part that is hard to find.)
+A fat premium is usually the market pricing an event, not free money.
 """
 
 from __future__ import annotations

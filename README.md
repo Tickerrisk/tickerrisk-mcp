@@ -6,9 +6,10 @@ An [MCP](https://modelcontextprotocol.io) server that lets an AI assistant answe
 *"is it safe to sell a 30-day put on HPE?"* with real event data instead of a guess.
 
 The problem it solves: a fat option premium is usually the market pricing in a **known upcoming
-event** — an earnings report, an FDA decision, a court date — not free money. Most option
-screeners rank by yield and never check the calendar. This one scores every candidate for
-catalysts that land *inside the expiry window*, and filters out the traps.
+event** — an earnings report, an FDA decision, a court date — not free money. Some screeners
+flag earnings; few check the wider event calendar. This one scores every candidate across
+earnings, FDA, legal, SEC and clinical events landing *inside the expiry window*, and filters
+out the traps.
 
 ```
 You:    Is it safe to sell a 4-week put on INTC?
@@ -162,11 +163,22 @@ Not financial advice. For research only.
 
 ## How it compares
 
-Option Samurai, Barchart, and Market Chameleon are mature screeners with far more filters
-and real-time data feeds — if you want depth of screening, use those. What none of them do
-is check whether a scheduled catalyst falls inside your specific expiry window and gate
-results on it. That single check is what this tool exists for, and it is the reason a
-100/100 INTC shows up as a warning rather than the top yield pick.
+Being accurate about this, because the differentiator is narrower than most tools claim:
+
+Earnings-date checking is **not** unique. Barchart's options screener has a "Flag Earnings"
+option that marks contracts whose next earnings date falls on or before expiration.
+Market Chameleon tracks biotech catalysts and links them to option chains. If earnings
+alone is what you need, those are mature tools with real-time data and far more filters —
+use them.
+
+What this tool does differently is combine **five** event types — earnings, FDA decisions,
+legal filings, SEC events and clinical milestones — into a single 0–100 score tied to your
+expiry window, and filter on it by default rather than showing an optional flag column.
+Court records as an options-risk input in particular is something we have not found
+elsewhere.
+
+So: if you want the deepest screener, use Barchart or Option Samurai. If you want one
+number that answers "is there anything scheduled inside this expiry", that is what this is.
 
 ## Links
 
