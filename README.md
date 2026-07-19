@@ -189,3 +189,11 @@ number that answers "is there anything scheduled inside this expiry", that is wh
 ## License
 
 MIT
+
+---
+
+<!-- Ownership marker required by the official MCP Registry: it verifies control of the
+     PyPI package by checking this exact string appears in the published README. Must match
+     the "name" field in server.json. Do not remove or reword. -->
+
+mcp-name: io.github.PasiutusVovere/tickerrisk-mcp

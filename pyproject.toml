@@ -1,6 +1,6 @@
 [project]
 name = "tickerrisk-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server that checks options trades for hidden catalysts (earnings, FDA, legal, SEC) before you sell premium"
 readme = "README.md"
 requires-python = ">=3.10"

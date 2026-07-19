@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.Tickerrisk/tickerrisk-mcp",
+  "name": "io.github.PasiutusVovere/tickerrisk-mcp",
   "title": "TickerRisk",
-  "description": "Check options trades for scheduled catalysts (earnings, FDA, legal, SEC, clinical) inside the expiry window before selling premium. Scores S&P 500 tickers 0-100 and screens cash-secured puts and covered calls.",
-  "version": "0.1.1",
+  "description": "Check options trades for hidden catalysts (earnings, FDA, legal, SEC) before you sell premium.",
+  "version": "0.1.2",
   "repository": {
     "url": "https://github.com/Tickerrisk/tickerrisk-mcp",
     "source": "github"
@@ -14,7 +14,7 @@
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "tickerrisk-mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
